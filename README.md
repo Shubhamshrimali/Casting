@@ -1,4 +1,4 @@
-INTRODUCTION
+#INTRODUCTION
 
 This project is the final project for the Udacity Full Stack Developer Nano Degree.The project is to simulate a casting agency. This includes having actors and movies and assigning actors to movies.This project has two models/tables: A movie table that holds all the movies and an actors table that holds all the actors. For each movie, there are many actors so there is a one to many relationship there. 
 
