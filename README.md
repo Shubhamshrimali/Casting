@@ -1,12 +1,12 @@
-#INTRODUCTION
+# INTRODUCTION
 
 This project is the final project for the Udacity Full Stack Developer Nano Degree.The project is to simulate a casting agency. This includes having actors and movies and assigning actors to movies.This project has two models/tables: A movie table that holds all the movies and an actors table that holds all the actors. For each movie, there are many actors so there is a one to many relationship there. 
 
-MOTIVATION
+## MOTIVATION
 
 Udacity give faculty teach the concept in very easy way. That anybody can understand easily and start working on the technology. This help to get confidance to work on the project and improve the skills.
 
-INSTRUCTION
+## INSTRUCTION
 
 To login or set up an account, go to the following url: 
 
@@ -17,7 +17,7 @@ There are three roles within the API. Casting Assistant, Casting Director and Ex
 The url for the API:
 https://moneyfistcasting2020.herokuapp.com/
 
-Installing Dependencies
+### Installing Dependencies
 
 Python 3.7
 Follow instructions to install the latest version of python for your platform in the python docs
@@ -40,7 +40,7 @@ To set up empty DB run alembic upgrade
 flask db upgrade
 With Postgres running and to run tests, restore a database file provided. From the folder in terminal run. 
 
-User Abilities
+### User Abilities
 
 Actors
 create:actor: Ability to permit creation of a new actor to insert into the DB
@@ -77,8 +77,8 @@ read:movie
 update:movie
 delete:movie
 
-API Endpoints
-Actors
+## API Endpoints
+### Actors
 
 POST /actors
 Endpoint to add a new actor in the DB. You need create:actor ability.
@@ -189,7 +189,7 @@ URL parameters:
 
 actor_id: Id of actor to delete
 
-Movies
+### Movies
 POST /movies
 Endpoint to add a new movie in the DB. You need create:movie ability.
 
