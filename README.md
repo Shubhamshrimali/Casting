@@ -1,10 +1,13 @@
 INTRODUCTION
+
 This project is the final project for the Udacity Full Stack Developer Nano Degree.The project is to simulate a casting agency. This includes having actors and movies and assigning actors to movies.This project has two models/tables: A movie table that holds all the movies and an actors table that holds all the actors. For each movie, there are many actors so there is a one to many relationship there. 
 
 MOTIVATION
+
 Udacity give faculty teach the concept in very easy way. That anybody can understand easily and start working on the technology. This help to get confidance to work on the project and improve the skills.
 
 INSTRUCTION
+
 To login or set up an account, go to the following url: 
 
 https://devcoffe.auth0.com/authorize?audience=https://moneyfistcasting2020.herokuapp.com/&response_type=token&client_id=FJ6I6cc01QVcgcM7Vgna3OVKzZHm6DbW0&redirect_uri=https://moneyfistcasting2020.herokuapp.com/
@@ -35,20 +38,25 @@ flask db upgrade
 With Postgres running and to run tests, restore a database file provided. From the folder in terminal run. 
 
 User Abilities
+
 Actors
 create:actor: Ability to permit creation of a new actor to insert into the DB
 read:actor: Ability to permit retrieving actors infos
 update:actor: Ability to permit edit an actor infos
 delete:actor: Ability to remove an actor from the DB
+
 Movies
 create:movie: Ability to permit creation of a new movie to insert into the DB
 read:movie: Ability to permit retrieving movies infos
 update:movie: Ability to permit edit a movie infos
 delete:movie: Ability to remove a movie from the DB
+
 User Roles
+
 assistant: Help casting director to analyze actors and movies info. Has following abilities:
 read:actor
 read:movie
+
 director: Take decisions about actors and can update movies data. Abilities:
 create:actor
 read:actor
@@ -56,6 +64,7 @@ update:actor
 delete:actor
 read:movie
 update:movie
+
 executive-producer: Can manage everything. Abilities:
 create:actor
 read:actor
