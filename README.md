@@ -23,12 +23,15 @@ Python 3.7
 Follow instructions to install the latest version of python for your platform in the python docs
 
 Virtual Environment,
+
 We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized. Instructions for setting up a virual enviornment for your platform can be found in the python docs
 
 PIP Dependencies
+
 Once you have your virtual environment setup and running, install dependencies by naviging to the /backend directory and running:
 
 pip install -r requirements.txt
+
 This will install all of the required packages we selected within the requirements.txt file.
 
 Database Setup
@@ -52,7 +55,6 @@ update:movie: Ability to permit edit a movie infos
 delete:movie: Ability to remove a movie from the DB
 
 User Roles
-
 assistant: Help casting director to analyze actors and movies info. Has following abilities:
 read:actor
 read:movie
@@ -74,8 +76,10 @@ create:movie
 read:movie
 update:movie
 delete:movie
+
 API Endpoints
 Actors
+
 POST /actors
 Endpoint to add a new actor in the DB. You need create:actor ability.
 
@@ -93,6 +97,7 @@ Example JSON request:
     "gender: "male",
     "movies":[]
 }
+
 GET /actors
 Endpoint to get list of actors. You need read:actor ability.
 
@@ -183,6 +188,7 @@ Endpoint to remove an actor from the DB. You need delete:actor ability.
 URL parameters:
 
 actor_id: Id of actor to delete
+
 Movies
 POST /movies
 Endpoint to add a new movie in the DB. You need create:movie ability.
@@ -238,6 +244,7 @@ Example JSON request:
     "page": 1,
     "pages": 2
 }
+
 GET /movies/:movie_id
 Endpoint to get a specific movie. You need read:movie ability.
 
@@ -259,6 +266,7 @@ Example JSON response:
         }
     ]
 }
+
 PATCH /movies/:movie_id
 Endpoint to edit an movie data. You need update:movie ability.
 
